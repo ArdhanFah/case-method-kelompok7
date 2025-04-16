@@ -26,7 +26,9 @@ public class dataMahasiswa7 {
         for (int i = 1; i < arrMhs7.length; i++) {
             Mahasiswa7 temp = arrMhs7[i]; //membuat temp dari tipe data Mahasiswa7
             int j = i-1;
-            while (j >= 0 && arrMhs7[j].nim.compareTo(temp.nim) > 0) { // > 0 untuk ascending(positif), < 0 untuk descending
+            while (j >= 0 && arrMhs7[j].nim.compareTo(temp.nim) > 0) { //apakah nim yang ada di arrMhs7[j] lebih besar dari nim yang ada di temp
+                //compaareTo() untuk membandingkan string, jika lebih besar dari 0 maka urutan nim diurutkan dari kecil ke besar
+                //dengan cara membandingkan 1 kata per 1 kata
                 arrMhs7[j+1] = arrMhs7[j];
                 j--;
             }
