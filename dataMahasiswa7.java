@@ -1,4 +1,4 @@
-public class dataMahasiswa7 {
+public class DataMahasiswa7 {
 
     // Method untuk menampilkan data mahasiswa
     void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) {
