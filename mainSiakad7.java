@@ -4,7 +4,7 @@ public class mainSiakad7 {
     public static void main(String[] args) {
         Scanner sc7 = new Scanner(System.in);
 
-        dataMahasiswa7 data = new dataMahasiswa7();
+        dataMahasiswa data = new dataMahasiswa();
         data.tampilMahasiswa();
         System.out.println();
 

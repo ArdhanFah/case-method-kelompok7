@@ -13,7 +13,7 @@ public class Mahasiswa7 {
 
     void tampilkanMahasiswa() {
         System.out.println("Nama\t\tNIM\t\tProdi");
-        System.out.println(nama + "|\t" + nim + "|\t" + prodi);
+        System.out.println(nama + "\t|\t" + nim + "\t|\t" + prodi);
 
     }
 }
