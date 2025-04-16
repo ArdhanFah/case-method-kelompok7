@@ -19,4 +19,19 @@ public class dataMahasiswa7 {
         }
         System.out.println("Data tidak ditemukan.");
     }
+    
+    // method untuk mencari by nim
+    void sortingByNim(Mahasiswa7[] arrMhs7) {
+        
+        for (int i = 1; i < arrMhs7.length; i++) {
+            Mahasiswa7 temp = arrMhs7[i]; //membuat temp dari tipe data Mahasiswa7
+            int j = i-1;
+            while (j >= 0 && arrMhs7[j].nim.compareTo(temp.nim) > 0) { // > 0 untuk ascending(positif), < 0 untuk descending
+                arrMhs7[j+1] = arrMhs7[j];
+                j--;
+            }
+            //jgn lupa j+1 agar tidak out of index
+            arrMhs7[j+1] = temp;
+        }
+    }
 }

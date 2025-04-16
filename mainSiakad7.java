@@ -17,5 +17,11 @@ public class mainSiakad7 {
         String nim = sc7.nextLine();
         dataMhs7.cariMahasiswa(arrMhs7,nim);
         System.out.println("=========================================");
+
+        System.out.println();
+        System.out.println("Sorting Data Mahasiswa berdasarkan NIM: ");
+        dataMhs7.sortingByNim(arrMhs7);
+        dataMhs7.tampilkanMahasiswa(arrMhs7);
+        System.out.println("=========================================");
     }
 }
