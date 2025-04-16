@@ -1,7 +1,4 @@
 import java.util.Scanner;
-// Add imports or ensure Mahasiswa7 and dataMahasiswa7 are accessible
-// import kelompok7.Mahasiswa7;
-// import kelompok7.dataMahasiswa7;
 
 public class mainSiakad7 {
     public static void main(String[] args) {
@@ -12,13 +9,13 @@ public class mainSiakad7 {
         arrMhs7[1] = new Mahasiswa7("Citra Dewi", "22003", "Informatika");
         arrMhs7[2] = new Mahasiswa7("Budi Santoso", "22002", "Informatika");
 
-        dataMahasiswa7 dataMhs7 = new dataMahasiswa7(arrMhs7);
-        dataMhs7.tampilkanMahasiswa();
+        dataMahasiswa7 dataMhs7 = new dataMahasiswa7(); //inisialisasi objek dataMhs7
+        dataMhs7.tampilkanMahasiswa(arrMhs7);
         System.out.println("=========================================");
         System.out.println("Pencarian Data Mahasiswa");
         System.out.println("Masukkan NIM yang dicari: ");
         String nim = sc7.nextLine();
-        dataMhs7.cariMahasiswa(nim);
+        dataMhs7.cariMahasiswa(arrMhs7,nim);
         System.out.println("=========================================");
     }
 }
