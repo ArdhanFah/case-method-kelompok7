@@ -1,42 +1,26 @@
 public class dataMahasiswa7 {
-    String[] nama = {"Ali Rahman","Budi Santoso", "Citra Dewi "};
-    String[] nim = {"22001 ", "22003", "22002"};
-    String[] prodi = {"Sistem Informasi Bisnis", "Informatika", "Informatika"};
-    
-    void tampilMahasiswa() {
-        System.out.println("Nama\t\tNIM\t\tProdi");
-        for (int i = 0; i < 3; i++) {
-            System.out.println(nama[i] + "\t|\t" + nim[i] + "\t|\t" + prodi[i]);
+    private Mahasiswa7[] arrMhs7;
+
+    // Constructor to initialize the array
+    public dataMahasiswa7(Mahasiswa7[] arrMhs7) {
+        this.arrMhs7 = arrMhs7;
+    }
+
+    // Method to display all students
+    public void tampilkanMahasiswa() {
+        for (Mahasiswa7 mhs : arrMhs7) {
+            System.out.println("Nama: " + mhs.nama + ", NIM: " + mhs.nim + ", Prodi: " + mhs.prodi);
         }
     }
 
-    void cariMahasiswa(String NIM) {
-        boolean ada = false;
-        for (int i = 0; i < 3; i++) {
-            if (nim[i].equals(NIM)) {
-                System.out.println("==========================");
-                System.out.println("Data Mahasiswa Ditemukan:");
-                System.out.println("Nama: " + nama[i]);
-                System.out.println("NIM: " + NIM);
-                System.out.println("Prodi: " + prodi[i]);
-                System.out.println("==========================");
-                ada = true;
-                break;
+    // Method to search for a student by NIM
+    public void cariMahasiswa(String nim) {
+        for (Mahasiswa7 mhs : arrMhs7) {
+            if (mhs.nim.equals(nim)) {
+                System.out.println("Data ditemukan: Nama: " + mhs.nama + ", NIM: " + mhs.nim + ", Prodi: " + mhs.prodi);
+                return;
             }
         }
-        if (!ada) {
-            System.out.println("Data tidak ditemukan.");
-        }
-    }
-
-    void sortingByNim(String [] nim) {
-        for (int i = 1; i < nim.length; i++) {
-            String temp = nim[i];
-            int j = i-1;
-            while (j >= 0 && nim[j].compareTo(temp) > 0) {
-                nim[j+1] = nim[j];
-                j--;
-            }
-        }
+        System.out.println("Data tidak ditemukan.");
     }
 }
