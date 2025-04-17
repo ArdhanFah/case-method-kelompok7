@@ -1,8 +1,8 @@
-class MataKuliah {
+public class MataKuliah7 {
     String kodeMK, namaMK;
     int sks;
 
-    MataKuliah(String kodeMK, String namaMK, int sks){
+    MataKuliah7(String kodeMK, String namaMK, int sks){
         this.kodeMK = kodeMK;
         this.namaMK = namaMK;
         this.sks = sks;

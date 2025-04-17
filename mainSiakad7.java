@@ -10,13 +10,15 @@ public class mainSiakad7 {
         arrMhs7[1] = new Mahasiswa7("Citra Dewi", "22003", "Informatika");
         arrMhs7[2] = new Mahasiswa7("Budi Santoso", "22002", "Informatika");
 
-        DataMataKuliah daftarMatkul = new DataMataKuliah(3);
-        daftarMatkul.tambahData(new MataKuliah7("MK001", "Struktur Data", 3));
-        daftarMatkul.tambahData(new MataKuliah7("MK002", "Basis Data", 3));
-        daftarMatkul.tambahData(new MataKuliah7("MK003", "Desain Web", 3));
+        MataKuliah7[] matkulList = new MataKuliah7[3];
+        matkulList[0] = new MataKuliah7("MK001", "Struktur Data", 3);
+        matkulList[1] = new MataKuliah7("MK002", "Basis Data", 3);
+        matkulList[2] = new MataKuliah7("MK003", "Desain Web", 3);
 
 
         DataMahasiswa7 dataMhs7 = new DataMahasiswa7(); //inisialisasi objek dataMhs7
+
+        DataMataKuliah7 dataMatkul7 = new DataMataKuliah7();
         
         Penilaian7[] arrPen = {
             new Penilaian7(arrMhs7[0], matkulList[1], 80, 85, 90), // Ali - Basis Data
@@ -37,7 +39,7 @@ public class mainSiakad7 {
                     dataMhs7.tampilkanMahasiswa(arrMhs7);
                     break;
                 case 2:     
-                    daftarMatkul.tampilDaftarMataKuliah();         
+                    dataMatkul7.tampilDaftarMataKuliah(matkulList);         
                     break;
                 case 3:  
                     dataPen7.tampilPenilaian();    
