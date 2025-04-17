@@ -1,11 +1,11 @@
 public class DataMataKuliah {
-    MataKuliah listMatkul[];
+    MataKuliah7 listMatkul[];
     int index; 
     DataMataKuliah(int jumMtakul){
-        listMatkul = new MataKuliah[jumMtakul];
+        listMatkul = new MataKuliah7[jumMtakul];
     }
 
-    void tambahData(MataKuliah matkul) {
+    void tambahData(MataKuliah7 matkul) {
         if (index < listMatkul.length) {
             listMatkul[index] = matkul;
             index++;
@@ -18,6 +18,8 @@ public class DataMataKuliah {
             for(int i =0; i< index;i++){
                 listMatkul[i].tampilMataKuliah();
            }
+        } else {
+            System.out.println("Belum ada data mata kuliah.");
         }
     }
 }
