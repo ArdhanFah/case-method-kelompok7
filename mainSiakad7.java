@@ -26,13 +26,15 @@ public class MainSiakad7 {
             new Penilaian7(arrMhs7[2], matkulList7[2], 80, 90, 65)  // Citra - Desain Web
         };
 
-        DataPenilaian7 dataPen7 = new DataPenilaian7(arrPen.length);
+        DataPenilaian7 dataPen7 = new DataPenilaian7(arrPen.length); // inisialisasi objek dataPen7
+        
+        // Menambahkan data penilaian ke dalam objek dataPen7
         for (Penilaian7 pen : arrPen) {
             dataPen7.tambahData(pen);
         }
         do{        
             System.out.println("=== MENU SISTEM AKADEMIK ===");
-            System.out.printf("1. Tampilkan Daftar Mahasiswa%n2. Tampilkan Daftar Mata Kuliah%n3. Tampilkan Data Penilaian%n4. Urutkan Mahasiswa Berdasarkan Nilai AKhir%n5. Cari Mahasiswa Berdasarkan NIM%n8. Keluar%n");
+            System.out.printf("1. Tampilkan Daftar Mahasiswa%n2. Tampilkan Daftar Mata Kuliah%n3. Tampilkan Data Penilaian%n4. Urutkan Mahasiswa Berdasarkan Nilai AKhir%n5. Cari Mahasiswa Berdasarkan NIM%n0. Keluar%n");
             System.out.print("Pilihan Menu: ");
             int choice = sci7.nextInt();
             switch (choice) {
