@@ -1,6 +1,8 @@
+package Penilaian;
+
 public class DataPenilaian7 {
 
-    Penilaian7[] listPenilaian;
+    private Penilaian7[] listPenilaian;
     int index = 0;
 
     // Constructor untuk inisiasi listPemilaian dengan ukuran yang sudah di kirimkan oleh main
@@ -8,8 +10,8 @@ public class DataPenilaian7 {
         listPenilaian = new Penilaian7[jumlah];
     }
 
-    //  Method untuk menambahkan data penilaian ke dalam array
-    void tambahData(Penilaian7 p) {
+    // Method untuk menambahkan data penilaian ke dalam array
+    public void tambahData(Penilaian7 p) {
         if (index < listPenilaian.length) {
             listPenilaian[index] = p;
             index++;
@@ -19,7 +21,7 @@ public class DataPenilaian7 {
     }
 
     // Method untuk menampilkan data penilaian
-    void tampilPenilaian() {
+    public void tampilPenilaian() {
         System.out.println("Data Penilaian");
         System.out.println("+-----------------------------------------------------+");
         System.out.printf("| %-15s | %-15s | %-15s |%n", "Nama", "Mata Kuliah", "Nilai Akhir");
@@ -36,9 +38,8 @@ public class DataPenilaian7 {
         System.out.println("+-----------------------------------------------------+");
     }
 
-
     // Method untuk mengurutkan data penilaian berdasarkan nilai akhir
-    void sortNilaiAkhir() {
+    private void sortNilaiAkhir() {
         for (int i = 0; i < index - 1; i++) {
             for (int j = 0; j < index - i - 1; j++) {
                 if (listPenilaian[j].nilaiAkhir < listPenilaian[j + 1].nilaiAkhir) {
@@ -51,7 +52,7 @@ public class DataPenilaian7 {
     }
 
     // method untuk menampilkan data penilaian yang sudah di sorting
-    void tampilSortNilaiAkhir() {
+    public void tampilSortNilaiAkhir() {
         sortNilaiAkhir();
         tampilPenilaian();
     }

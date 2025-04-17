@@ -1,18 +1,20 @@
+package Mahasiswa;
+
 public class Mahasiswa7 {
 
-    String nama;
-    String nim;
-    String prodi;
+    public String nama;
+    public String nim;
+    public String prodi;
 
     // Constructor
     
-    Mahasiswa7(String nama, String nim, String prodi) {
+    public Mahasiswa7(String nama, String nim, String prodi) {
         this.nama = nama;
         this.nim = nim;
         this.prodi = prodi;
     }
 
-    void tampilkanMahasiswa() {
+    public void tampilkanMahasiswa() {
         System.out.println(nama + "\t|" + nim + "| \t" + prodi);
     }
 }

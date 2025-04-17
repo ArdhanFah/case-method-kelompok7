@@ -1,9 +1,13 @@
+package Penilaian;
+import Mahasiswa.Mahasiswa7;
+import MataKuliah.MataKuliah7;
+
 public class Penilaian7{
-    Mahasiswa7 mahasiswa;
-    MataKuliah7 matakuliah;
-    double nilaiTugas, nilaiUTS, nilaiUAS, nilaiAkhir;
+    public Mahasiswa7 mahasiswa;
+    public MataKuliah7 matakuliah;
+    public double nilaiTugas, nilaiUTS, nilaiUAS, nilaiAkhir;
     
-    Penilaian7(Mahasiswa7 mahasiswa, MataKuliah7 matakuliah, double nilaiTugas, double nilaiUTS, double nilaiUAS){
+    public Penilaian7(Mahasiswa7 mahasiswa, MataKuliah7 matakuliah, double nilaiTugas, double nilaiUTS, double nilaiUAS){
         this.mahasiswa = mahasiswa;
         this.matakuliah = matakuliah;
         this.nilaiTugas = nilaiTugas;

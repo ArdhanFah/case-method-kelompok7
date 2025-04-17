@@ -1,4 +1,10 @@
 import java.util.Scanner;
+import Mahasiswa.Mahasiswa7;
+import Mahasiswa.DataMahasiswa7;
+import MataKuliah.MataKuliah7;
+import MataKuliah.DataMataKuliah7;
+import Penilaian.Penilaian7;
+import Penilaian.DataPenilaian7;
 
 public class MainSiakad7 {
     public static void main(String[] args) {
@@ -26,9 +32,9 @@ public class MainSiakad7 {
             new Penilaian7(arrMhs7[2], matkulList7[2], 80, 90, 65)  // Citra - Desain Web
         };
 
-        DataPenilaian7 dataPen7 = new DataPenilaian7(arrPen.length); // inisialisasi objek dataPen7
-        
-        // Menambahkan data penilaian ke dalam objek dataPen7
+        DataPenilaian7 dataPen7 = new DataPenilaian7(arrPen.length);  //inisialisasi objek dataPen7
+
+        // Perulangan untuk mengirimkan data penilaian ke dalam array listPenilaian di DataPenilaian7
         for (Penilaian7 pen : arrPen) {
             dataPen7.tambahData(pen);
         }
