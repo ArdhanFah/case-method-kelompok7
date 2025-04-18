@@ -3,8 +3,8 @@ public class dataMahasiswa7 {
     // Method untuk menampilkan data mahasiswa
     void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) {
         for (int i = 0; i < arrMhs7.length; i++) {
-            System.out.println("Nama: " + arrMhs7[i].nama + ", NIM: " + arrMhs7[i].nim + ", Prodi: " + arrMhs7[i].prodi);
-        
+            // System.out.println("Nama: " + arrMhs7[i].nama + ", NIM: " + arrMhs7[i].nim + ", Prodi: " + arrMhs7[i].prodi);
+            arrMhs7[i].tampilkanMahasiswa(); //memanggil method tampilkanMahasiswa() dari class Mahasiswa7
         }
     
     }
@@ -13,7 +13,8 @@ public class dataMahasiswa7 {
     void cariMahasiswa(Mahasiswa7[] arrMhs7, String nim) {
         for (int i = 0; i < arrMhs7.length; i++) {
             if (arrMhs7[i].nim.equals(nim)) {
-                System.out.println("Data ditemukan: Nama: " + arrMhs7[i].nama + ", NIM: " + arrMhs7[i].nim + ", Prodi: " + arrMhs7[i].prodi);
+                System.out.println("Data ditemukan: ");  
+                arrMhs7[i].tampilkanMahasiswa();
                 return;
             }
         }
@@ -26,10 +27,12 @@ public class dataMahasiswa7 {
         for (int i = 1; i < arrMhs7.length; i++) {
             Mahasiswa7 temp = arrMhs7[i]; //membuat temp dari tipe data Mahasiswa7
             int j = i-1;
-            while (j >= 0 && arrMhs7[j].nim.compareTo(temp.nim) > 0) { //apakah nim yang ada di arrMhs7[j] lebih besar dari nim yang ada di temp
+            while (j >= 0 && arrMhs7[j].nim.compareTo(temp.nim) > 0) { //ascending kecil - besar 
+                //menggunakan ascii untuk membandingkan nim , 
                 //compaareTo() untuk membandingkan string, jika lebih besar dari 0 maka urutan nim diurutkan dari kecil ke besar
                 //dengan cara membandingkan 1 kata per 1 kata
-                arrMhs7[j+1] = arrMhs7[j];
+            //cara membacanya value j dikurangi value temp(secara angka ascii), dan jika plus(asc) yang menandakan j > temp
+                arrMhs7[j+1] = arrMhs7[j]; 
                 j--;
             }
             //jgn lupa j+1 agar tidak out of index
