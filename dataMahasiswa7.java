@@ -35,8 +35,9 @@ public class dataMahasiswa7 {
                 arrMhs7[j+1] = arrMhs7[j]; 
                 j--;
             }
+            //j = -1 
             //jgn lupa j+1 agar tidak out of index
-            arrMhs7[j+1] = temp;
+            arrMhs7[j+1] = temp; //agar j=0
         }
     }
 }
