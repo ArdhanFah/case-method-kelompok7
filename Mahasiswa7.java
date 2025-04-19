@@ -1,8 +1,8 @@
 public class Mahasiswa7 {
 
-    public String nama;
-    public String nim;
-    public String prodi;
+    String nama;
+    String nim;
+    String prodi;
 
     // Constructor
     
