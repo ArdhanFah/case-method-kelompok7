@@ -1,4 +1,4 @@
-public class DataMahasiswa7 { // Perbaikan nama kelas dengan huruf kapital
+public class DataMahasiswa7 {
 
     // Method untuk menampilkan data mahasiswa
     void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) { 
