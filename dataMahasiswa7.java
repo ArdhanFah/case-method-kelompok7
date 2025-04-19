@@ -39,5 +39,6 @@ public class DataMahasiswa7 { // Perbaikan nama kelas dengan huruf kapital
             //jgn lupa j+1 agar tidak out of index
             arrMhs7[j+1] = temp; //agar j=0
         }
+        tampilkanMahasiswa(arrMhs7);
     }
 }
