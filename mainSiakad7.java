@@ -21,7 +21,8 @@ public class MainSiakad7 {
         System.out.println();
         System.out.println("Sorting Data Mahasiswa berdasarkan NIM: ");
         dataMhs7.sortingByNim(arrMhs7);
-        dataMhs7.tampilkanMahasiswa(arrMhs7);
         System.out.println("=========================================");
+
+
     }
 }
