@@ -1,4 +1,4 @@
-public class dataMahasiswa7 {
+public class DataMahasiswa7 {
 
     // Method untuk menampilkan data mahasiswa
     void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) {
@@ -21,7 +21,7 @@ public class dataMahasiswa7 {
         System.out.println("Data tidak ditemukan.");
     }
     
-    // method untuk mencari by nim
+    // method untuk mencari by nim inserstion sort
     void sortingByNim(Mahasiswa7[] arrMhs7) {
         
         for (int i = 1; i < arrMhs7.length; i++) {
