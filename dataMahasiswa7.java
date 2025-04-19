@@ -3,13 +3,12 @@ public class DataMahasiswa7 {
     // Method untuk menampilkan data mahasiswa
     void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) {
         for (int i = 0; i < arrMhs7.length; i++) {
-            // System.out.println("Nama: " + arrMhs7[i].nama + ", NIM: " + arrMhs7[i].nim + ", Prodi: " + arrMhs7[i].prodi);
             arrMhs7[i].tampilkanMahasiswa(); //memanggil method tampilkanMahasiswa() dari class Mahasiswa7
         }
     
     }
 
-    // Method untuk mencari data mahasiswa berdasarkan NIM
+    // Method untuk mencari data mahasiswa berdasarkan NIM 
     void cariMahasiswa(Mahasiswa7[] arrMhs7, String nim) {
         for (int i = 0; i < arrMhs7.length; i++) {
             if (arrMhs7[i].nim.equals(nim)) {
@@ -21,7 +20,7 @@ public class DataMahasiswa7 {
         System.out.println("Data tidak ditemukan.");
     }
     
-    // method untuk mencari by nim
+    // method untuk mencari by nim insertion sort
     void sortingByNim(Mahasiswa7[] arrMhs7) {
         
         for (int i = 1; i < arrMhs7.length; i++) {
