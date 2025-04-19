@@ -4,7 +4,7 @@ public class DataMahasiswa7 { // Perbaikan nama kelas dengan huruf kapital
     public void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) { // Tambahkan modifier public
         System.out.println("=========================================");
         System.out.println("Data Mahasiswa: ");
-        System.out.println("Nama \t| NIM| \t Prodi");
+        System.out.println("Nama \t| NIM | \t Prodi");
         for (int i = 0; i < arrMhs7.length; i++) {
             arrMhs7[i].tampilkanMahasiswa(); //memanggil method tampilkanMahasiswa() dari class Mahasiswa7
         }
