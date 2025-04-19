@@ -13,7 +13,7 @@ public class Mahasiswa7 {
     }
 
     void tampilkanMahasiswa() {
-        System.out.println(nama + "\t|" + nim + "| \t" + prodi);
+        System.out.printf("%-15s| %-15s | %-15s |%n", nama, nim, prodi);
     }
 }
 
