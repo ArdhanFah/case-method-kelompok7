@@ -2,9 +2,10 @@ public class DataMahasiswa7 { // Perbaikan nama kelas dengan huruf kapital
 
     // Method untuk menampilkan data mahasiswa
     public void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) { // Tambahkan modifier public
-        System.out.println("=========================================");
-        System.out.println("Data Mahasiswa: ");
-        System.out.println("Nama \t| NIM | \t Prodi");
+        System.out.println("== Data Mahasiswa ==");
+        System.out.println("============================================================");
+        System.out.printf("%-15s| %-15s | %-15s |%n", "Nama", "NIM", "Prodi");
+        System.out.println("============================================================");
         for (int i = 0; i < arrMhs7.length; i++) {
             arrMhs7[i].tampilkanMahasiswa(); //memanggil method tampilkanMahasiswa() dari class Mahasiswa7
         }
