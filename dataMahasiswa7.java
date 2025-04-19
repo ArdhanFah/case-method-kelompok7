@@ -2,10 +2,13 @@ public class DataMahasiswa7 {
 
     // Method untuk menampilkan data mahasiswa
     void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) {
+        System.out.println("=========================================");
+        System.out.println("Daftar Mahasiswa: ");
+        System.out.println("Nama\t| NIM\t| Prodi");
         for (int i = 0; i < arrMhs7.length; i++) {
             arrMhs7[i].tampilkanMahasiswa(); //memanggil method tampilkanMahasiswa() dari class Mahasiswa7
         }
-    
+        System.out.println("=========================================");
     }
 
     // Method untuk mencari data mahasiswa berdasarkan NIM 
@@ -37,6 +40,7 @@ public class DataMahasiswa7 {
             //j = -1 
             //jgn lupa j+1 agar tidak out of index
             arrMhs7[j+1] = temp; //agar j=0
+            arrMhs7.tampilkanMahasiswa(); //menampilkan data mahasiswa setelah sorting
         }
     }
 }
