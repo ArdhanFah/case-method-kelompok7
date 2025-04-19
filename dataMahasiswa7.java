@@ -1,16 +1,17 @@
-public class DataMahasiswa7 {
+public class DataMahasiswa7 { // Perbaikan nama kelas dengan huruf kapital
 
     // Method untuk menampilkan data mahasiswa
-    void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) {
+    public void tampilkanMahasiswa(Mahasiswa7[] arrMhs7) { // Tambahkan modifier public
+        System.out.println("=========================================");
+        System.out.println("Data Mahasiswa: ");
+        System.out.println("Nama \t\t| NIM \t| Prodi");
         for (int i = 0; i < arrMhs7.length; i++) {
-            // System.out.println("Nama: " + arrMhs7[i].nama + ", NIM: " + arrMhs7[i].nim + ", Prodi: " + arrMhs7[i].prodi);
             arrMhs7[i].tampilkanMahasiswa(); //memanggil method tampilkanMahasiswa() dari class Mahasiswa7
         }
-    
     }
 
     // Method untuk mencari data mahasiswa berdasarkan NIM
-    void cariMahasiswa(Mahasiswa7[] arrMhs7, String nim) {
+    public void cariMahasiswa(Mahasiswa7[] arrMhs7, String nim) { // Tambahkan modifier public
         for (int i = 0; i < arrMhs7.length; i++) {
             if (arrMhs7[i].nim.equals(nim)) {
                 System.out.println("Data ditemukan: ");  
@@ -21,9 +22,8 @@ public class DataMahasiswa7 {
         System.out.println("Data tidak ditemukan.");
     }
     
-    // method untuk mencari by nim inserstion sort
-    void sortingByNim(Mahasiswa7[] arrMhs7) {
-        
+    // Method untuk sorting data mahasiswa berdasarkan NIM
+    public void sortingByNim(Mahasiswa7[] arrMhs7) { // Tambahkan modifier public
         for (int i = 1; i < arrMhs7.length; i++) {
             Mahasiswa7 temp = arrMhs7[i]; //membuat temp dari tipe data Mahasiswa7
             int j = i-1;
