@@ -6,9 +6,9 @@ public class MainSiakad7 {
         Scanner sci7 = new Scanner(System.in);  // Untuk Input Angka
 
         Mahasiswa7[] arrMhs7 = new Mahasiswa7[3]; //inisialisasi array objek arrMhs7
-        arrMhs7[0] = new Mahasiswa7("Ali Rahman", "22001", "Sistem Informasi Bisnis");
-        arrMhs7[1] = new Mahasiswa7("Citra Dewi", "22003", "Informatika");
-        arrMhs7[2] = new Mahasiswa7("Budi Santoso", "22002", "Informatika");
+        arrMhs7[0] = new Mahasiswa7("Ali Rahman", "22001", "Informatika");
+        arrMhs7[1] = new Mahasiswa7("Budi Santoso", "22002", "Informatika");
+        arrMhs7[2] = new Mahasiswa7("Citra Dewi", "22003", "Sistem Informasi Bisnis");
 
         MataKuliah7[] matkulList7 = new MataKuliah7[3];
         matkulList7[0] = new MataKuliah7("MK001", "Struktur Data", 3);
