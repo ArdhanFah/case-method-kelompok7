@@ -19,7 +19,7 @@ public class MainSiakad7 {
         DataMahasiswa7 dataMhs7 = new DataMahasiswa7(); //inisialisasi objek dataMhs7
         
         Penilaian7[] arrPen = {
-            new Penilaian7(arrMhs7[0], matkulList7[1], 80, 85, 90), // Ali - Struktur Data
+            new Penilaian7(arrMhs7[0], matkulList7[0], 80, 85, 90), // Ali - Struktur Data
             new Penilaian7(arrMhs7[0], matkulList7[1], 60, 75, 70), // Ali - Basis Data
             new Penilaian7(arrMhs7[1], matkulList7[0], 75, 70, 80), // Budi - Struktur Data
             new Penilaian7(arrMhs7[2], matkulList7[1], 85, 90, 95), // Citra - Basis Data
